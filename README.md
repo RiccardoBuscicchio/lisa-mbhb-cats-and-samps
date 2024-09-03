@@ -1,2 +1,7 @@
-# lisa-mbhb-catalogs
-Massive black hole binary LISA catalogs datasets
+# LISA mbhb-catalogs
+Repository for permanent hosting of LISA simulated catalogs.
+
+Contributors:
+- Alice Spadaro @alisword
+- Riccardo Buscicchio @RiccardoBuscicchio
+- Davide Gerosa @dgerosa
