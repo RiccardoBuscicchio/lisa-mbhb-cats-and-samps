@@ -1,13 +1,4 @@
 # LISA mbhb-catalogs
-Repository for permanent hosting of LISA simulated catalogs.
-
-Contributors:
-- Alice Spadaro @AliSword
-- Riccardo Buscicchio @RiccardoBuscicchio
-- Davide Gerosa @dgerosa
-
-# twoprecessingspins
-
 Data release supporting:
 
 - _Stars or gas? Constraining the hardening processes of massive black-hole binaries with LISA_. Alice Spadaro, Riccardo Buscicchio, David Izquerdo-Villalba, Antoine Klein, Geraint Pratten, Davide Gerosa. [arXiv:2409.XXYY](https://arxiv.org/abs/2409.XXYY).
