@@ -1,6 +1,6 @@
 # LISA mbhb-catalogs
-Data release supporting:
 
+Data release supporting:
 - _Stars or gas? Constraining the hardening processes of massive black-hole binaries with LISA_. Alice Spadaro, Riccardo Buscicchio, David Izquerdo-Villalba, Antoine Klein, Geraint Pratten, Davide Gerosa. [arXiv:2409.XXYY](https://arxiv.org/abs/2409.XXYY).
 
 ## Credits
@@ -12,8 +12,63 @@ If you want to cite this data release specifically, the DOI code is: [![DOI](htt
 ## Data
 
 Data need to be downloaded from the [github release page](https://github.com/RiccardoBuscicchio/lisa-mbhb-catalogs/releases). 
-The total size is ~450MB.
+The total size is ~XYZMB in total: ~450MB for the catalogs, ~XYZ for the posterior samples of the reference catalog.
+We provide 1000 simulated LISA realizations, in `catalogs/LisaCatalogFrame_*.h5`.
+Similarly, posterior samples for each event analyzed are in `samples/source_*.h5`.
+  
 
-We provide 1000 simulated LISA realizations (referred to as catalogs), named `LisaCatalog_*.h5`. 
+# Catalog and posterior samples
 
-- Each catalog contains a variable number of sources: it can be loaded in a single panda dataframe using the snippet in the accompanying Jupyter notebook (with a few example lines to access binary systems parameters).
+Reading a catalog is as simple as 
+
+```python
+import pandas as pd
+# Read the catalog
+catalog_number = 1
+cat = pd.read_hdf(f'catalogs/LisaCatalogFrame_{catalog_number}.h5', key='events')
+# Inspect events in the catalog
+print(cat.head())
+``` 
+
+Reading posterior samples from an event of TheCatalog is as simple as 
+
+```python
+import pandas as pd
+event_number = 1
+# Read the samples from the first event 
+samples = pd.read_hdf(f'TheCatalog_samples/source_{event_number}.h5', key='samples')
+# Inspect the samples
+samples.head()
+```
+
+# Units and conventions
+
+Catalog columns are either source parameters or `SNR` or `Detection`.
+
+Units for source parameters are specified in the dictionary below:
+```python
+dimensionsdict = {
+ 'DimensionlessSpin1': 'dimensionless',
+ 'DimensionlessSpin2': 'dimensionless',
+ 'EclipticLongitude': 'radian',
+ 'Gas fraction': 'dimensionless',
+ 'InitialOrbitalPhase': 'radian',
+ 'LuminosityDistance': 'kiloparsec',
+ 'Mass ratio': 'dimensionless',
+ 'MergerTimeOrInitialOrbitalFrequency': 'second',
+ 'Polarization': 'dimensionless',
+ 'Redshift': 'dimensionless',
+ 'RedshiftedMass1': 'dimensionless',
+ 'RedshiftedMass2': 'solar mass',
+ 'SNR': 'solar mass',
+ 'cosInclination': 'dimensionless',
+ 'f_isco': 'dimensionless',
+ 'sinEclipticLatitude': 'Hz',
+ }
+ ```
+
+ SNR is either a float or `NaN`, for the reason specified in the `Detection` string:
+ - `Yes` 
+ - `LowSNR`
+ - `LowMassRatio`
+ - `OutOfBand`
