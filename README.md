@@ -76,4 +76,4 @@ samples = pd.read_hdf(f'TheCatalog_samples/source_{event_number}.h5', key='sampl
 samples.head()
 ```
 
-Units and conventions are the same as for the Catalog, with the addition of the (unnormalized) loglikelihood column `logL`. 
+Units and conventions are the same as for the Catalog, with the addition of the (unnormalized) log-likelihood column `logL`. 
