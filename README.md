@@ -54,6 +54,8 @@ dimensionsdict = {
  'sinEclipticLatitude': 'Hz',
  }
  ```
+ for their definitions, please refer to the paper. 
+
  SNR is either a float or `NaN`, for the reason specified in the `Detection` string:
  - `Yes` 
  - `LowSNR`
