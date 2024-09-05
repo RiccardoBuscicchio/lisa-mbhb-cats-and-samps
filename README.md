@@ -1,7 +1,9 @@
 # LISA mbhb-catalogs
 
 Data release supporting:
-- _Stars or gas? Constraining the hardening processes of massive black-hole binaries with LISA_. Alice Spadaro, Riccardo Buscicchio, David Izquerdo-Villalba, Antoine Klein, Geraint Pratten, Davide Gerosa. [arXiv:2409.XXYY](https://arxiv.org/abs/2409.XXYY).
+- _Stars or gas? Constraining the hardening processes of massive black-hole binaries with LISA_. 
+(**EDIT WITH FINAL AUTHORSHIP**)
+Alice Spadaro, Riccardo Buscicchio, David Izquerdo-Villalba, Antoine Klein, Geraint Pratten, Davide Gerosa. [arXiv:2409.XXYY](https://arxiv.org/abs/2409.XXYY).
 
 ## Credits
 
