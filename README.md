@@ -17,7 +17,7 @@ We provide 1000 simulated LISA realizations, in `catalogs/LisaCatalogFrame_*.h5`
 Similarly, posterior samples for each event analyzed are in `samples/source_*.h5`.
   
 
-# Requirements
+## Requirements
 To read catalogs and samples you just need the [pandas](https://pandas.pydata.org/) python package. 
 
 ## LISA Catalogs
