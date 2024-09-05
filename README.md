@@ -17,7 +17,7 @@ We provide 1000 simulated LISA realizations, in `catalogs/LisaCatalogFrame_*.h5`
 Similarly, posterior samples for each event analyzed are in `samples/source_*.h5`.
   
 
-# Catalog and posterior samples
+## LISA Catalogs
 
 Reading a catalog is as simple as 
 
@@ -29,18 +29,6 @@ cat = pd.read_hdf(f'catalogs/LisaCatalogFrame_{catalog_number}.h5', key='events'
 # Inspect events in the catalog
 print(cat.head())
 ``` 
-
-Reading posterior samples from an event of TheCatalog is as simple as 
-
-```python
-import pandas as pd
-event_number = 1
-# Read the samples from the first event 
-samples = pd.read_hdf(f'TheCatalog_samples/source_{event_number}.h5', key='samples')
-# Inspect the samples
-samples.head()
-```
-
 # Units and conventions
 
 Catalog columns are either source parameters or `SNR` or `Detection`.
@@ -66,9 +54,24 @@ dimensionsdict = {
  'sinEclipticLatitude': 'Hz',
  }
  ```
-
  SNR is either a float or `NaN`, for the reason specified in the `Detection` string:
  - `Yes` 
  - `LowSNR`
  - `LowMassRatio`
  - `OutOfBand`
+
+
+## TheCatalog event posterior samples
+
+Reading posterior samples from an event of TheCatalog is as simple as 
+
+```python
+import pandas as pd
+event_number = 1
+# Read the samples from the first event 
+samples = pd.read_hdf(f'TheCatalog_samples/source_{event_number}.h5', key='samples')
+# Inspect the samples
+samples.head()
+```
+
+Units and conventions are the same as for the Catalog, with the addition of the (unnormalized) loglikelihood column `logL`. 
