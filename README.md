@@ -1,4 +1,4 @@
-# LISA mbhb-catalogs-and-samples
+# LISA mbhb-cats-and-samps 🐈‍⬛ & 🌽
 
 Data release supporting:
 - _Stars or gas? Constraining the hardening processes of massive black-hole binaries with LISA_. 
