@@ -1,4 +1,4 @@
-# LISA mbhb-catalogs
+# LISA mbhb-catalogs-and-samples
 
 Data release supporting:
 - _Stars or gas? Constraining the hardening processes of massive black-hole binaries with LISA_. 
@@ -36,9 +36,9 @@ print(cat.head())
 ``` 
 # Units and conventions
 
-Catalog columns are either source parameters or `SNR` or `Detection`.
+Catalog columns are source parameters used for injection, `f_isco`,`Gas fraction`, `SNR`, `Detection`.
 
-Units for source parameters are specified in the dictionary below:
+Units for source parameters, `f_isco`, `Gas fraction`, are specified in the dictionary below:
 ```python
 dimensionsdict = {
  'DimensionlessSpin1': 'dimensionless',
