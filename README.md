@@ -34,7 +34,10 @@ cat = pd.read_hdf(f'catalogs/LisaCatalogFrame_{catalog_number}.h5', key='events'
 # Inspect events in the catalog
 print(cat.head())
 ``` 
-# Units and conventions
+
+If you want to open TheCatalog, as we refer to it in the publication, use `catalog_number=713`.
+
+## Units and conventions
 
 Catalog columns are source parameters used for injection, `f_isco`,`Gas fraction`, `SNR`, `Detection`.
 
