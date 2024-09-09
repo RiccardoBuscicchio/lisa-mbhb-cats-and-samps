@@ -58,8 +58,8 @@ dimensionsdict = {
  'RedshiftedMass2': 'solar mass',
  'SNR': 'solar mass',
  'cosInclination': 'dimensionless',
- 'f_isco': 'dimensionless',
- 'sinEclipticLatitude': 'Hz',
+ 'f_isco': 'Hz',
+ 'sinEclipticLatitude': 'dimensionless',
  }
  ```
  for their definitions, please refer to the paper. 
