@@ -65,10 +65,10 @@ dimensionsdict = {
  for their definitions, please refer to the paper. 
 
  SNR is either a float or `NaN`, for the reason specified in the `Detection` string:
- - `Yes` 
- - `LowSNR`
- - `LowMassRatio`
- - `OutOfBand`
+ - `Yes`: Source is detectable
+ - `LowSNR`: Source is not detectable, given the SNR threshold
+ - `LowMassRatio`: Source has too low mass-ratio, for the waveform to be used confidently
+ - `OutOfBand`: the source is undetectable because its signal is outside the LISA sensitivity band
 
 
 ## TheCatalog event posterior samples
