@@ -3,7 +3,7 @@
 Data release supporting:
 - _Stars or gas? Constraining the hardening processes of massive black-hole binaries with LISA_. 
 (**EDIT WITH FINAL AUTHORSHIP**)
-Alice Spadaro, Riccardo Buscicchio, David Izquerdo-Villalba, Davide Gerosa, Geraint Pratten, Antoine Klein. [arXiv:2409.XXYY](https://arxiv.org/abs/2409.XXYY).
+Alice Spadaro, Riccardo Buscicchio, David Izquerdo-Villalba, Davide Gerosa, Antoine Klein, Geraint Pratten. [arXiv:2409.XXYY](https://arxiv.org/abs/2409.XXYY).
 
 ## Credits
 
