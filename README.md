@@ -8,7 +8,7 @@ Alice Spadaro, Riccardo Buscicchio, David Izquerdo-Villalba, Davide Gerosa, Anto
 ## Credits
 
 You are welcome to use this dataset in your research. We kindly ask you to cite the paper above. 
-If you want to cite this data release specifically, the DOI code is: [![DOI](https://zenodo.org/badge/DOI/XX.YYYY/zenodo.XXYYWWZ.svg)](https://doi.org/XX.YYYY/zenodo.XXYYWWZ).
+If you want to cite this data release specifically, the DOI is: [![DOI](https://zenodo.org/badge/DOI/XX.YYYY/zenodo.XXYYWWZ.svg)](https://doi.org/XX.YYYY/zenodo.XXYYWWZ).
 
 
 ## Data
