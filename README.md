@@ -14,7 +14,7 @@ If you want to cite this data release specifically, the DOI is: [![DOI](https://
 ## Data
 
 Data need to be downloaded from the [github release page](https://github.com/RiccardoBuscicchio/lisa-mbhb-catalogs/releases). 
-The total size is ~XYZMB in total: ~450MB for the catalogs, ~XYZ for the posterior samples of the reference catalog.
+The total size is ~1.2GB in total: ~1.1GB for the catalogs available, ~100MB for the posterior samples of TheCatalog inference.
 We provide 1000 simulated LISA realizations, in `catalogs/LisaCatalogFrame_*.h5`.
 Similarly, posterior samples for each event analyzed are in `samples/source_*.h5`.
   
