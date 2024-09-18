@@ -39,9 +39,9 @@ If you want to open TheCatalog, as we refer to it in the publication, use `catal
 
 ## Units and conventions
 
-Catalog columns are source parameters used for injection, `f_isco`,`Gas fraction`, `SNR`, `Detection`.
+Catalog columns are source parameters used for injection, `f_cut`,`Gas fraction`, `SNR`, `Detection`.
 
-Units for source parameters, `f_isco`, `Gas fraction`, are specified in the dictionary below:
+Units for source parameters, `f_cut`, `Gas fraction`, are specified in the dictionary below:
 ```python
 dimensionsdict = {
  'DimensionlessSpin1': 'dimensionless',
