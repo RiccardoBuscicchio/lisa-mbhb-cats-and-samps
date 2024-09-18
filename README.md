@@ -3,12 +3,12 @@
 Data release supporting:
 - _Stars or gas? Constraining the hardening processes of massive black-hole binaries with LISA_. 
 (**EDIT WITH FINAL AUTHORSHIP**)
-Alice Spadaro, Riccardo Buscicchio, David Izquerdo-Villalba, Antoine Klein, Geraint Pratten, Davide Gerosa. [arXiv:2409.XXYY](https://arxiv.org/abs/2409.XXYY).
+Alice Spadaro, Riccardo Buscicchio, David Izquerdo-Villalba, Davide Gerosa, Antoine Klein, Geraint Pratten. [arXiv:2409.XXYY](https://arxiv.org/abs/2409.XXYY).
 
 ## Credits
 
 You are welcome to use this dataset in your research. We kindly ask you to cite the paper above. 
-If you want to cite this data release specifically, the DOI code is: [![DOI](https://zenodo.org/badge/DOI/XX.YYYY/zenodo.XXYYWWZ.svg)](https://doi.org/XX.YYYY/zenodo.XXYYWWZ).
+If you want to cite this data release specifically, the DOI is: [![DOI](https://zenodo.org/badge/DOI/XX.YYYY/zenodo.XXYYWWZ.svg)](https://doi.org/XX.YYYY/zenodo.XXYYWWZ).
 
 
 ## Data
@@ -39,9 +39,9 @@ If you want to open TheCatalog, as we refer to it in the publication, use `catal
 
 ## Units and conventions
 
-Catalog columns are source parameters used for injection, `f_isco`,`Gas fraction`, `SNR`, `Detection`.
+Catalog columns are source parameters used for injection, `f_cut`,`Gas fraction`, `SNR`, `Detection`.
 
-Units for source parameters, `f_isco`, `Gas fraction`, are specified in the dictionary below:
+Units for source parameters, `f_cut`, `Gas fraction`, are specified in the dictionary below:
 ```python
 dimensionsdict = {
  'DimensionlessSpin1': 'dimensionless',
@@ -49,7 +49,7 @@ dimensionsdict = {
  'EclipticLongitude': 'radian',
  'Gas fraction': 'dimensionless',
  'InitialOrbitalPhase': 'radian',
- 'LuminosityDistance': 'kiloparsec',
+ 'LuminosityDistance': 'parsec',
  'Mass ratio': 'dimensionless',
  'MergerTimeOrInitialOrbitalFrequency': 'second',
  'Polarization': 'dimensionless',
@@ -58,17 +58,18 @@ dimensionsdict = {
  'RedshiftedMass2': 'solar mass',
  'SNR': 'solar mass',
  'cosInclination': 'dimensionless',
- 'f_isco': 'dimensionless',
- 'sinEclipticLatitude': 'Hz',
+ 'f_cut': 'Hz',
+ 'sinEclipticLatitude': 'dimensionless',
  }
  ```
  for their definitions, please refer to the paper. 
+The only exception: `f_cut`, which corresponds exactly to `5*f_isco`, the latter being defined in the paper. 
 
  SNR is either a float or `NaN`, for the reason specified in the `Detection` string:
- - `Yes` 
- - `LowSNR`
- - `LowMassRatio`
- - `OutOfBand`
+ - `Yes`: Source is detectable
+ - `LowSNR`: Source is not detectable, given the SNR threshold
+ - `LowMassRatio`: Source has too low mass-ratio, for the waveform to be used confidently
+ - `OutOfBand`: the source is undetectable because its signal is outside the LISA sensitivity band
 
 
 ## TheCatalog event posterior samples
