@@ -58,11 +58,12 @@ dimensionsdict = {
  'RedshiftedMass2': 'solar mass',
  'SNR': 'solar mass',
  'cosInclination': 'dimensionless',
- 'f_isco': 'Hz',
+ 'f_cut': 'Hz',
  'sinEclipticLatitude': 'dimensionless',
  }
  ```
  for their definitions, please refer to the paper. 
+The only exception: `f_cut`, which corresponds exactly to `5*f_isco`, the latter being defined in the paper. 
 
  SNR is either a float or `NaN`, for the reason specified in the `Detection` string:
  - `Yes`: Source is detectable
