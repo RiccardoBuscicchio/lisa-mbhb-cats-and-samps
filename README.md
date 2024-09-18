@@ -83,4 +83,19 @@ samples = pd.read_hdf(f'TheCatalog_samples/source_{event_number}.h5', key='sampl
 samples.head()
 ```
 
-Units and conventions are the same as for the Catalog, with the addition of the (unnormalized) log-likelihood column `logL`.
+Units and conventions are similar to those of injections, just with a different parameterization.
+```python
+{'DeltaMu': 'dimensionless',
+ 'DimensionlessSpin1': 'dimensionless',
+ 'DimensionlessSpin2': 'dimensionless',
+ 'EclipticLongitude': 'radian',
+ 'InitialOrbitalPhase': 'radian',
+ 'LuminosityDistance': 'parsec',
+ 'MergerTimeOrInitialOrbitalFrequency': 'second',
+ 'Polarization': 'dimensionless',
+ 'RedshiftedChirpMass': 'solar mass',
+ 'cosInclination': 'dimensionless',
+ 'sinEclipticLatitude': 'dimensionless',
+ 'logL': 'dimensionless'}
+```
+In addition, of the (unnormalized) log-likelihood column `logL`.
