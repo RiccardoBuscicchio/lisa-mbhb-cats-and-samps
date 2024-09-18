@@ -49,7 +49,7 @@ dimensionsdict = {
  'EclipticLongitude': 'radian',
  'Gas fraction': 'dimensionless',
  'InitialOrbitalPhase': 'radian',
- 'LuminosityDistance': 'kiloparsec',
+ 'LuminosityDistance': 'parsec',
  'Mass ratio': 'dimensionless',
  'MergerTimeOrInitialOrbitalFrequency': 'second',
  'Polarization': 'dimensionless',
