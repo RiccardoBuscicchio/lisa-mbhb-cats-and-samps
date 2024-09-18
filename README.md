@@ -98,4 +98,4 @@ Units and conventions are similar to those of injections, just with a different 
  'sinEclipticLatitude': 'dimensionless',
  'logL': 'dimensionless'}
 ```
-In addition, of the (unnormalized) log-likelihood column `logL`.
+In addition we store the (unnormalized) log-likelihood column `logL`.
