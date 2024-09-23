@@ -92,7 +92,7 @@ Units and conventions are similar to those of injections, just with a different 
  'InitialOrbitalPhase': 'radian',
  'LuminosityDistance': 'parsec',
  'MergerTimeOrInitialOrbitalFrequency': 'second',
- 'Polarization': 'dimensionless',
+ 'Polarization': 'radian',
  'RedshiftedChirpMass': 'solar mass',
  'cosInclination': 'dimensionless',
  'sinEclipticLatitude': 'dimensionless',
